@@ -24,13 +24,12 @@ export const ContactForm = ({onHandleSubmit, contacts}) => {
     }
 
     onHandleSubmit({ name, phone, id: nanoid() })
-    resetForm()
-  }
-
-  const resetForm = () => {
+    
     setName('')
     setPhone('')
-  }   
+  }
+
+
 
 
         return(
