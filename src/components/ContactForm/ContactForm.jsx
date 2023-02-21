@@ -23,8 +23,14 @@ export const ContactForm = ({onHandleSubmit, contacts}) => {
       return
     }
 
-    onHandleSubmit({name, phone, id: nanoid()})
+    onHandleSubmit({ name, phone, id: nanoid() })
+    resetForm()
   }
+
+  const resetForm = () => {
+    setName('')
+    setPhone('')
+  }   
 
 
         return(
